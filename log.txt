@@ -1,0 +1,320 @@
+
+P = 10 | Radius = 200 km
+
+Selected FFC cities:
+Nashik, Maharashtra
+Khandwa, Madhya Pradesh
+Surendranagar Dudhrej, Gujarat
+Kishangarh, Rajasthan
+Kaithal, Haryana
+Jamuria, West Bengal
+Tiruvannamalai, Tamil Nadu
+Nalgonda, Andhra Pradesh
+Mainpuri, Uttar Pradesh
+Ghazipur, Uttar Pradesh
+
+Covered cities:
+New Delhi, Delhi
+Mumbai, Maharashtra
+Bangalore, Karnataka
+Hyderabad, Andhra Pradesh
+Chennai, Tamil Nadu
+Kolkata, West Bengal
+Ahmedabad, Gujarat
+Surat, Gujarat
+Pune, Maharashtra
+Jaipur, Rajasthan
+Lucknow, Uttar Pradesh
+Kanpur, Uttar Pradesh
+Indore, Madhya Pradesh
+Thane, Maharashtra
+Ghaziabad, Uttar Pradesh
+Bhopal, Madhya Pradesh
+Pimpri Chinchwad, Maharashtra
+Patna, Bihar
+Vadodara, Gujarat
+Ludhiana, Punjab
+Agra, Uttar Pradesh
+Faridabad, Haryana
+Nashik, Maharashtra
+Navi Mumbai, Maharashtra
+Rajkot, Gujarat
+Meerut, Uttar Pradesh
+Kalyan-Dombivli, Maharashtra
+Vasai, Maharashtra
+Aurangabad, Maharashtra
+Varanasi, Uttar Pradesh
+Gurgaon, Haryana
+Dhanbad, Jharkhand
+Ranchi, Jharkhand
+Allahabad, Uttar Pradesh
+Haora, West Bengal
+Vijayawada, Andhra Pradesh
+Gwalior, Madhya Pradesh
+Jodhpur, Rajasthan
+Kota, Rajasthan
+Chandigarh, Chandigarh
+Bareilly, Uttar Pradesh
+Moradabad, Uttar Pradesh
+Aligarh, Uttar Pradesh
+Jalandhar, Punjab
+Mira-Bhayandar, Maharashtra
+Tiruchirappalli, Tamil Nadu
+Salem, Tamil Nadu
+Bhiwandi, Maharashtra
+Saharanpur, Uttar Pradesh
+Noida, Uttar Pradesh
+Gorakhpur, Uttar Pradesh
+Guntur, Andhra Pradesh
+Warangal, Andhra Pradesh
+Amravati, Maharashtra
+Jamshedpur, Jharkhand
+Ferozabad, Uttar Pradesh
+Bhavnagar, Gujarat
+Dehradun, Uttarakhand
+Durgapur, West Bengal
+Asansol, West Bengal
+Loni, Uttar Pradesh
+Ajmer, Rajasthan
+Jamnagar, Gujarat
+Ujjain, Madhya Pradesh
+Ambattur, Tamil Nadu
+Maheshtala, West Bengal
+Malegaon, Maharashtra
+Jalgaon, Maharashtra
+Rajpur Sonarpur, West Bengal
+Gaya, Bihar
+Kurnool, Andhra Pradesh
+Akola, Maharashtra
+Patiala, Punjab
+Bokaro, Jharkhand
+Bhagalpur, Bihar
+Rajarhat Gopalpur, West Bengal
+Muzaffarnagar, Uttar Pradesh
+Rohtak, Haryana
+Dhule, Maharashtra
+Avadi, Tamil Nadu
+Bhilwara, Rajasthan
+Muzaffarpur, Bihar
+Mathura, Uttar Pradesh
+Ahmadnagar, Maharashtra
+Rampur, Uttar Pradesh
+Junagadh, Gujarat
+Shahjahanpur, Uttar Pradesh
+Bardhaman, West Bengal
+Kulti, West Bengal
+Hisar, Haryana
+Ozhukarai, Puducherry
+Panipat, Haryana
+Tirupati, Andhra Pradesh
+Bathinda, Punjab
+Karnal, Haryana
+Dewas, Madhya Pradesh
+Maunath Bhanjan, Uttar Pradesh
+Hapur, Uttar Pradesh
+Barasat, West Bengal
+Farukhabad, Uttar Pradesh
+Karimnagar, Andhra Pradesh
+Ambarnath, Maharashtra
+Arrah, Bihar
+Tiruvottiyur, Tamil Nadu
+Gandhidham, Gujarat
+Etawah, Uttar Pradesh
+Bharatpur, Rajasthan
+North Dumdum, West Bengal
+Baranagar, West Bengal
+Puducherry, Puducherry
+English Bazar, West Bengal
+Sikar, Rajasthan
+Haridwar, Uttarakhand
+Ramagundam, Andhra Pradesh
+Singrauli, Madhya Pradesh
+Mirzapur, Uttar Pradesh
+Pallavaram, Tamil Nadu
+Uluberia, West Bengal
+Pali, Rajasthan
+Sambhal, Uttar Pradesh
+Bulandshahr, Uttar Pradesh
+Mango, Jharkhand
+Burhanpur, Madhya Pradesh
+Nadiad, Gujarat
+Thanjavur, Tamil Nadu
+Bidhannagar, West Bengal
+Yamunanagar, Haryana
+Deoghar, Jharkhand
+Berhampore, West Bengal
+Munger, Bihar
+Kharagpur, West Bengal
+Gandhinagar, Gujarat
+Eluru, Andhra Pradesh
+Ongole, Andhra Pradesh
+Nandyal, Andhra Pradesh
+Secunderabad, Andhra Pradesh
+Morena, Madhya Pradesh
+Khora, Uttar Pradesh
+Ambala, Haryana
+Chapra, Bihar
+Bhind, Madhya Pradesh
+Amroha, Uttar Pradesh
+Anand, Gujarat
+Bhiwani, Haryana
+Panvel, Maharashtra
+Morvi, Gujarat
+Bhusawal, Maharashtra
+Khandwa, Madhya Pradesh
+Tambaram, Tamil Nadu
+Vapi, Gujarat
+Vellore, Tamil Nadu
+Orai, Uttar Pradesh
+Khammam, Andhra Pradesh
+Mahesana, Gujarat
+Dinapur Nizamat, Bihar
+Unnao, Uttar Pradesh
+Chinsurah, West Bengal
+Sirsa, Haryana
+Sitapur, Uttar Pradesh
+Surendranagar Dudhrej, Gujarat
+Bharuch, Gujarat
+Alandur, Tamil Nadu
+Kanchipuram, Tamil Nadu
+Medinipur, West Bengal
+Cuddalore, Tamil Nadu
+Bahadurgarh, Haryana
+Shimla, Himachal Pradesh
+Jaunpur, Uttar Pradesh
+Jind, Haryana
+Mahbubnagar, Andhra Pradesh
+Hoshiarpur, Punjab
+Tenali, Andhra Pradesh
+Tonk, Rajasthan
+S.A.S. Nagar Mohali, Punjab
+Chittoor, Andhra Pradesh
+Navsari, Gujarat
+Budaun, Uttar Pradesh
+Erode, Tamil Nadu
+Krishnanagar, West Bengal
+Thanesar, Haryana
+Lakhimpur, Uttar Pradesh
+Barrackpore, West Bengal
+Kishangarh, Rajasthan
+Moga, Punjab
+Rewari, Haryana
+Robertson Pet, Karnataka
+Sasaram, Bihar
+Habra, West Bengal
+Hajipur, Bihar
+Kaithal, Haryana
+Rudrapur, Uttarakhand
+Beawar, Rajasthan
+Godhra, Gujarat
+Jamuria, West Bengal
+Tiruvannamalai, Tamil Nadu
+Kolar, Karnataka
+Madanapalle, Andhra Pradesh
+Nalgonda, Andhra Pradesh
+Bankura, West Bengal
+Dehri, Bihar
+Modinagar, Uttar Pradesh
+Kumbakonam, Tamil Nadu
+Malerkotla, Punjab
+Siwan, Bihar
+Bettiah, Bihar
+Hazaribag, Jharkhand
+Palanpur, Gujarat
+Botad, Gujarat
+Motihari, Bihar
+Nabadwip, West Bengal
+Pithampur, Madhya Pradesh
+Dhaulpur, Rajasthan
+Pilibhit, Uttar Pradesh
+Deoria, Uttar Pradesh
+Hardoi, Uttar Pradesh
+Raniganj, West Bengal
+Khanna, Punjab
+Halisahar, West Bengal
+Madavaram, Tamil Nadu
+Puruliya, West Bengal
+Hosur, Tamil Nadu
+Patan, Gujarat
+Roorkee, Uttarakhand
+Baidyabati, West Bengal
+Giridih, Jharkhand
+Sawai Madhopur, Rajasthan
+Valsad, Gujarat
+Greater Noida, Uttar Pradesh
+Gudivada, Andhra Pradesh
+Jetpur Navagadh, Gujarat
+Gangapur City, Rajasthan
+Jhunjhunun, Rajasthan
+Akbarpur, Uttar Pradesh
+Barnala, Punjab
+Churu, Rajasthan
+Mainpuri, Uttar Pradesh
+Narasaraopet, Andhra Pradesh
+Chandausi, Uttar Pradesh
+Deesa, Gujarat
+Ambur, Tamil Nadu
+Bagaha, Bihar
+Basti, Uttar Pradesh
+Etah, Uttar Pradesh
+Gondal, Gujarat
+Jagtial, Andhra Pradesh
+Kalol, Gujarat
+Mangalagiri, Andhra Pradesh
+Mughalsarai, Uttar Pradesh
+Nandurbar, Maharashtra
+Silvassa, Dadra & Nagar Haveli
+Azamgarh, Uttar Pradesh
+Jehanabad, Bihar
+Khurja, Uttar Pradesh
+Rajpura, Punjab
+Achalpur, Maharashtra
+Baripada, Odisha
+Suryapet, Andhra Pradesh
+Bhiwadi, Rajasthan
+Bongaon, West Bengal
+Ghazipur, Uttar Pradesh
+Sanand, Gujarat
+Sehore, Madhya Pradesh
+Shikohabad, Uttar Pradesh
+Sultanpur, Uttar Pradesh
+Miryalaguda, Andhra Pradesh
+Shamli, Uttar Pradesh
+Ambala Sadar, Haryana
+Bijnor, Uttar Pradesh
+Khargone, Madhya Pradesh
+Palwal, Haryana
+Zirakpur, Punjab
+Amreli, Gujarat
+Jamalpur, Bihar
+Neyveli, Tamil Nadu
+Aurangabad, Bihar
+Buxar, Bihar
+Kasganj, Uttar Pradesh
+Lakhisarai, Bihar
+Ballia, Uttar Pradesh
+Baraut, Uttar Pradesh
+Betul, Madhya Pradesh
+Bundi, Rajasthan
+Chilakaluripet, Andhra Pradesh
+Nagaur, Rajasthan
+Shahabad, Uttar Pradesh
+Datia, Madhya Pradesh
+Khambhat, Gujarat
+Nagapattinam, Tamil Nadu
+Dhoraji, Gujarat
+Tanda, Uttar Pradesh
+Chalisgaon, Maharashtra
+Sujangarh, Rajasthan
+Viluppuram, Tamil Nadu
+Amalner, Maharashtra
+Chakdaha, West Bengal
+Itarsi, Madhya Pradesh
+Dankuni, West Bengal
+Dhar, Madhya Pradesh
+Kot Kapura, Punjab
+Tiruchengode, Tamil Nadu
+Sircilla, Andhra Pradesh
+
+Number of cities covered = 301
+Total demand covered = 157587836.4224135

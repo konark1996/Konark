@@ -1,0 +1,72 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-08-14 19:07:15
+
+========== WITHOUT FCI ==========
+
+Iteration 0 (Before cuts)
+LP = 3511.2533, IP = 3079.5800, Gap% = 14.02
+Runtime WITHOUT FCI = 0.1522 seconds
+
+========== WITH FCI / SEPARATION ==========
+
+--- Iteration 1 ---
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [2, 3]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(2,3) + x(3,3) + (0.00)(1-y(2,3)) + (1.00)(1-y(3,3)) <= b(3)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [1, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(1,4) + x(4,4) + (1.00)(1-y(1,4)) + (2.00)(1-y(4,4)) <= b(4)
+LP = 3511.2533, IP = 3079.5800, Gap% = 14.02
+
+--- Iteration 2 ---
+
+[DEMAND FLOW COVER] Node j = 2
+C1 = [1, 3]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(1,2) + x(3,2) + (0.00)(1-y(1,2)) + (2.00)(1-y(3,2)) <= b(2)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [0, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,3) + x(2,3) + (1.00)(1-y(0,3)) + (2.00)(1-y(2,3)) <= b(3)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [3, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(3,4) + x(4,4) + (1.00)(1-y(3,4)) + (0.00)(1-y(4,4)) <= b(4)
+LP = 3416.8000, IP = 3079.5800, Gap% = 10.95
+
+--- Iteration 3 ---
+
+[DEMAND FLOW COVER] Node j = 0
+C1 = [0, 1]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,0) + x(1,0) + (1.00)(1-y(0,0)) + (1.00)(1-y(1,0)) <= b(0)
+LP = 3342.2840, IP = 3079.5800, Gap% = 8.53
+
+--- Iteration 4 ---
+LP = 3323.2169, IP = 3079.5800, Gap% = 7.91
+
+==============================================
+FINAL RESULTS
+==============================================
+Gap Before FCI      = 14.02%
+Gap After FCI       = 7.91%
+Gap Reduction       = 6.11%
+Runtime WITHOUT FCI = 0.1522 seconds
+Runtime WITH FCI    = 3.4279 seconds
+Total Flow Cover Inequalities = 6
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 |  3511.25 |  3079.58 |  14.02
+   1 |  3511.25 |  3079.58 |  14.02
+   2 |  3416.80 |  3079.58 |  10.95
+   3 |  3342.28 |  3079.58 |   8.53
+   4 |  3323.22 |  3079.58 |   7.91

@@ -1,0 +1,77 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-08-14 18:25:47
+
+========== WITHOUT FCI ==========
+
+Iteration 0 (Before cuts)
+LP = 2233.9733, IP = 1914.6500, Gap% = 16.68
+Runtime WITHOUT FCI = 0.1963 seconds
+
+========== WITH FCI / SEPARATION ==========
+
+--- Iteration 1 ---
+
+[SUPPLY FLOW COVER] Node i = 2
+C1 = [1, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(2,1) + x(2,5) + (1.00)(1-y(2,1)) + (2.00)(1-y(2,5)) <= a(2)
+
+[SUPPLY FLOW COVER] Node i = 4
+C1 = [5, 7]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(4,5) + x(4,7) + (1.00)(1-y(4,5)) + (0.00)(1-y(4,7)) <= a(4)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [0, 7]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,4) + x(7,4) + (0.00)(1-y(0,4)) + (2.00)(1-y(7,4)) <= b(4)
+LP = 2233.9733, IP = 1914.6500, Gap% = 16.68
+
+--- Iteration 2 ---
+
+[SUPPLY FLOW COVER] Node i = 2
+C1 = [0, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(2,0) + x(2,5) + (1.00)(1-y(2,0)) + (2.00)(1-y(2,5)) <= a(2)
+
+[SUPPLY FLOW COVER] Node i = 4
+C1 = [1, 7]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(4,1) + x(4,7) + (1.00)(1-y(4,1)) + (0.00)(1-y(4,7)) <= a(4)
+LP = 1972.7300, IP = 1914.6500, Gap% = 3.03
+
+--- Iteration 3 ---
+
+[SUPPLY FLOW COVER] Node i = 3
+C1 = [3, 7]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(3,3) + x(3,7) + (1.00)(1-y(3,3)) + (0.00)(1-y(3,7)) <= a(3)
+
+[DEMAND FLOW COVER] Node j = 5
+C1 = [1, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(1,5) + x(2,5) + (0.00)(1-y(1,5)) + (1.00)(1-y(2,5)) <= b(5)
+LP = 1958.5687, IP = 1914.6500, Gap% = 2.29
+
+--- Iteration 4 ---
+LP = 1956.7250, IP = 1914.6500, Gap% = 2.20
+
+==============================================
+FINAL RESULTS
+==============================================
+Gap Before FCI      = 16.68%
+Gap After FCI       = 2.20%
+Gap Reduction       = 14.48%
+Runtime WITHOUT FCI = 0.1963 seconds
+Runtime WITH FCI    = 5.3922 seconds
+Total Flow Cover Inequalities = 7
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 |  2233.97 |  1914.65 |  16.68
+   1 |  2233.97 |  1914.65 |  16.68
+   2 |  1972.73 |  1914.65 |   3.03
+   3 |  1958.57 |  1914.65 |   2.29
+   4 |  1956.73 |  1914.65 |   2.20

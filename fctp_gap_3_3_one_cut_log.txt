@@ -1,0 +1,210 @@
+
+===========================================================================
+FCTP-R FLOW COVER CUTTING-PLANE ALGORITHM
+===========================================================================
+Timestamp: 2026-10-26 22:25:00
+Input file: Input_data_3.xlsx
+Solver: cplex
+Baseline runs: 3
+Maximum iterations: 1000
+
+===========================================================================
+BASELINE RUNS: WITHOUT CUSTOM FCI CUTS
+===========================================================================
+
+---------- BASELINE RUN 1 ----------
+LP objective: 2501.960000
+IP objective: 2187.890000
+Gap (%): 14.3549
+LP solve time: 0.0962 seconds
+IP solve time: 0.0718 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.1680 seconds
+
+---------- BASELINE RUN 2 ----------
+LP objective: 2501.960000
+IP objective: 2187.890000
+Gap (%): 14.3549
+LP solve time: 0.0899 seconds
+IP solve time: 0.0774 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.1673 seconds
+
+---------- BASELINE RUN 3 ----------
+LP objective: 2501.960000
+IP objective: 2187.890000
+Gap (%): 14.3549
+LP solve time: 0.0714 seconds
+IP solve time: 0.0891 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.1605 seconds
+
+===========================================================================
+STARTING ONE-CUT-AT-A-TIME SEPARATION
+===========================================================================
+Initial LP objective: 2501.960000
+Initial LP solving time: 0.0783 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 1
+---------------------------------------------------------------------------
+Current LP objective: 2501.960000
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 0
+Cover C1: [1, 2]
+Lambda: 3.00000000
+Inequality: x(0,1) + x(0,2) + (1.00000000)*(1-y(0,1)) + (1.00000000)*(1-y(0,2)) <= a(0)
+LHS at current LP solution: 5.75000000
+RHS: 5.00000000
+Violation: 0.75000000
+===========================================================================
+Separation time for this pass: 0.0932 seconds
+
+CUT 1 ADDED
+Type: SUPPLY
+Node: 0
+Cover: [1, 2]
+Lambda: 3.00000000
+Violation before adding: 0.75000000
+Total cuts added: 1
+LP objective after cut 1: 2464.990000
+LP solve time after cut 1: 0.0661 seconds
+IP objective after cut 1: 2187.890000
+Gap after cut 1 (%): 12.6652
+IP solve time after cut 1 (excluded from with-cuts total): 0.0702 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 2
+---------------------------------------------------------------------------
+Current LP objective: 2464.990000
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 0
+Cover C1: [0, 2]
+Lambda: 3.00000000
+Inequality: x(0,0) + x(0,2) + (1.00000000)*(1-y(0,0)) + (1.00000000)*(1-y(0,2)) <= a(0)
+LHS at current LP solution: 5.75000000
+RHS: 5.00000000
+Violation: 0.75000000
+===========================================================================
+Separation time for this pass: 0.0695 seconds
+
+CUT 2 ADDED
+Type: SUPPLY
+Node: 0
+Cover: [0, 2]
+Lambda: 3.00000000
+Violation before adding: 0.75000000
+Total cuts added: 2
+LP objective after cut 2: 2440.650000
+LP solve time after cut 2: 0.0638 seconds
+IP objective after cut 2: 2187.890000
+Gap after cut 2 (%): 11.5527
+IP solve time after cut 2 (excluded from with-cuts total): 0.0558 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 3
+---------------------------------------------------------------------------
+Current LP objective: 2440.650000
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 2
+Cover C1: [0, 1]
+Lambda: 1.00000000
+Inequality: x(2,0) + x(2,1) + (3.00000000)*(1-y(2,0)) + (3.00000000)*(1-y(2,1)) <= a(2)
+LHS at current LP solution: 7.50000000
+RHS: 7.00000000
+Violation: 0.50000000
+===========================================================================
+Separation time for this pass: 0.1922 seconds
+
+CUT 3 ADDED
+Type: SUPPLY
+Node: 2
+Cover: [0, 1]
+Lambda: 1.00000000
+Violation before adding: 0.50000000
+Total cuts added: 3
+LP objective after cut 3: 2395.983333
+LP solve time after cut 3: 0.0760 seconds
+IP objective after cut 3: 2187.890000
+Gap after cut 3 (%): 9.5111
+IP solve time after cut 3 (excluded from with-cuts total): 0.0662 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 4
+---------------------------------------------------------------------------
+Current LP objective: 2395.983333
+Separation time for this pass: 0.4609 seconds
+No violated supply or demand FCI found.
+Separation procedure stopped.
+
+===========================================================================
+FINAL OPTIMIZATION RESULTS
+===========================================================================
+Total cuts added: 3
+
+--- BEFORE CUTS: BASELINE RUN 1 ---
+LP objective: 2501.960000
+IP objective: 2187.890000
+Gap before cuts (%): 14.3549
+
+--- AFTER ALL CUTS ---
+LP objective: 2395.983333
+IP objective: 2187.890000
+Gap after cuts (%): 9.5111
+Gap reduction (percentage points): 4.8438
+
+===========================================================================
+WITHOUT-CUTS TIMING: LP + IP
+===========================================================================
+Run 1: LP = 0.0962 s, IP = 0.0718 s, LP + IP = 0.1680 s
+Run 2: LP = 0.0899 s, IP = 0.0774 s, LP + IP = 0.1673 s
+Run 3: LP = 0.0714 s, IP = 0.0891 s, LP + IP = 0.1605 s
+
+===========================================================================
+WITH-CUTS TIMING: SEPARATION + LP
+===========================================================================
+Total separation time: 0.8158 seconds
+Total LP solving time with cuts: 0.2842 seconds
+TOTAL TIME WITH CUTS (Separation + LP): 1.1000 seconds
+IP solving time with cuts, reported separately: 0.1923 seconds
+Final IP solve time, excluded from total: 0.0602 seconds
+Total wall-clock runtime: 2.2262 seconds
+
+===========================================================================
+ALL ADDED FLOW COVER INEQUALITIES
+===========================================================================
+
+Cut number: 1
+Type: SUPPLY
+Node index: 0
+Cover: [1, 2]
+Lambda: 3.00000000
+Inequality: x(0,1) + x(0,2) + (1.00000000)*(1-y(0,1)) + (1.00000000)*(1-y(0,2)) <= a(0)
+LHS before adding: 5.75000000
+RHS: 5.00000000
+Violation: 0.75000000
+
+Cut number: 2
+Type: SUPPLY
+Node index: 0
+Cover: [0, 2]
+Lambda: 3.00000000
+Inequality: x(0,0) + x(0,2) + (1.00000000)*(1-y(0,0)) + (1.00000000)*(1-y(0,2)) <= a(0)
+LHS before adding: 5.75000000
+RHS: 5.00000000
+Violation: 0.75000000
+
+Cut number: 3
+Type: SUPPLY
+Node index: 2
+Cover: [0, 1]
+Lambda: 1.00000000
+Inequality: x(2,0) + x(2,1) + (3.00000000)*(1-y(2,0)) + (3.00000000)*(1-y(2,1)) <= a(2)
+LHS before adding: 7.50000000
+RHS: 7.00000000
+Violation: 0.50000000
+
+Excel results saved to: fctp_gap_3_3_one_cut.xlsx

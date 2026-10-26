@@ -1,0 +1,1090 @@
+
+===========================================================================
+FCTP-R FLOW COVER CUTTING-PLANE ALGORITHM
+===========================================================================
+Timestamp: 2026-10-26 22:59:15
+Input file: fctp_Input_data_15_15.xlsx
+Solver: cplex
+Baseline runs: 3
+Maximum iterations: 1000
+
+===========================================================================
+BASELINE RUNS: WITHOUT CUSTOM FCI CUTS
+===========================================================================
+
+---------- BASELINE RUN 1 ----------
+LP objective: 89839.968095
+IP objective: 88378.870000
+Gap (%): 1.6532
+LP solve time: 0.0815 seconds
+IP solve time: 0.4979 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.5795 seconds
+
+---------- BASELINE RUN 2 ----------
+LP objective: 89839.968095
+IP objective: 88378.870000
+Gap (%): 1.6532
+LP solve time: 0.0841 seconds
+IP solve time: 0.5092 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.5933 seconds
+
+---------- BASELINE RUN 3 ----------
+LP objective: 89839.968095
+IP objective: 88378.870000
+Gap (%): 1.6532
+LP solve time: 0.0775 seconds
+IP solve time: 0.5011 seconds
+WITHOUT-CUTS TIME (LP + IP): 0.5786 seconds
+
+===========================================================================
+STARTING ONE-CUT-AT-A-TIME SEPARATION
+===========================================================================
+Initial LP objective: 89839.968095
+Initial LP solving time: 0.0839 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 1
+---------------------------------------------------------------------------
+Current LP objective: 89839.968095
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 0
+Cover C1: [11, 12]
+Lambda: 3.00000000
+Inequality: x(0,11) + x(0,12) + (2.00000000)*(1-y(0,11)) + (2.00000000)*(1-y(0,12)) <= a(0)
+LHS at current LP solution: 7.60000000
+RHS: 7.00000000
+Violation: 0.60000000
+===========================================================================
+Separation time for this pass: 0.0719 seconds
+
+CUT 1 ADDED
+Type: SUPPLY
+Node: 0
+Cover: [11, 12]
+Lambda: 3.00000000
+Violation before adding: 0.60000000
+Total cuts added: 1
+LP objective after cut 1: 89803.279524
+LP solve time after cut 1: 0.0644 seconds
+IP objective after cut 1: 88378.870000
+Gap after cut 1 (%): 1.6117
+IP solve time after cut 1 (excluded from with-cuts total): 0.5326 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 2
+---------------------------------------------------------------------------
+Current LP objective: 89803.279524
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 2
+Cover C1: [4, 5]
+Lambda: 6.00000000
+Inequality: x(2,4) + x(2,5) + (2.00000000)*(1-y(2,4)) + (2.00000000)*(1-y(2,5)) <= a(2)
+LHS at current LP solution: 11.50000000
+RHS: 10.00000000
+Violation: 1.50000000
+===========================================================================
+Separation time for this pass: 0.2046 seconds
+
+CUT 2 ADDED
+Type: SUPPLY
+Node: 2
+Cover: [4, 5]
+Lambda: 6.00000000
+Violation before adding: 1.50000000
+Total cuts added: 2
+LP objective after cut 2: 89767.720476
+LP solve time after cut 2: 0.0916 seconds
+IP objective after cut 2: 88378.870000
+Gap after cut 2 (%): 1.5715
+IP solve time after cut 2 (excluded from with-cuts total): 0.6169 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 3
+---------------------------------------------------------------------------
+Current LP objective: 89767.720476
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 5
+Cover C1: [3, 14]
+Lambda: 3.00000000
+Inequality: x(5,3) + x(5,14) + (0.00000000)*(1-y(5,3)) + (6.00000000)*(1-y(5,14)) <= a(5)
+LHS at current LP solution: 11.00000000
+RHS: 9.00000000
+Violation: 2.00000000
+===========================================================================
+Separation time for this pass: 0.4884 seconds
+
+CUT 3 ADDED
+Type: SUPPLY
+Node: 5
+Cover: [3, 14]
+Lambda: 3.00000000
+Violation before adding: 2.00000000
+Total cuts added: 3
+LP objective after cut 3: 89745.430476
+LP solve time after cut 3: 0.0935 seconds
+IP objective after cut 3: 88378.870000
+Gap after cut 3 (%): 1.5463
+IP solve time after cut 3 (excluded from with-cuts total): 0.5688 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 4
+---------------------------------------------------------------------------
+Current LP objective: 89745.430476
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 4
+Cover C1: [0, 13]
+Lambda: 5.00000000
+Inequality: x(4,0) + x(4,13) + (2.00000000)*(1-y(4,0)) + (0.00000000)*(1-y(4,13)) <= a(4)
+LHS at current LP solution: 8.42857143
+RHS: 7.00000000
+Violation: 1.42857143
+===========================================================================
+Separation time for this pass: 0.3033 seconds
+
+CUT 4 ADDED
+Type: SUPPLY
+Node: 4
+Cover: [0, 13]
+Lambda: 5.00000000
+Violation before adding: 1.42857143
+Total cuts added: 4
+LP objective after cut 4: 89738.784444
+LP solve time after cut 4: 0.0863 seconds
+IP objective after cut 4: 88378.870000
+Gap after cut 4 (%): 1.5387
+IP solve time after cut 4 (excluded from with-cuts total): 0.6769 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 5
+---------------------------------------------------------------------------
+Current LP objective: 89738.784444
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [1, 6, 8]
+Lambda: 6.00000000
+Inequality: x(7,1) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,1)) + (-1.00000000)*(1-y(7,6)) + (-2.00000000)*(1-y(7,8)) <= a(7)
+LHS at current LP solution: 10.85714286
+RHS: 10.00000000
+Violation: 0.85714286
+===========================================================================
+Separation time for this pass: 0.4815 seconds
+
+CUT 5 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [1, 6, 8]
+Lambda: 6.00000000
+Violation before adding: 0.85714286
+Total cuts added: 5
+LP objective after cut 5: 89731.929048
+LP solve time after cut 5: 0.0803 seconds
+IP objective after cut 5: 88378.870000
+Gap after cut 5 (%): 1.5310
+IP solve time after cut 5 (excluded from with-cuts total): 0.5333 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 6
+---------------------------------------------------------------------------
+Current LP objective: 89731.929048
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [6, 8, 14]
+Lambda: 8.00000000
+Inequality: x(7,6) + x(7,8) + x(7,14) + (-3.00000000)*(1-y(7,6)) + (-4.00000000)*(1-y(7,8)) + (1.00000000)*(1-y(7,14)) <= a(7)
+LHS at current LP solution: 10.88888889
+RHS: 10.00000000
+Violation: 0.88888889
+===========================================================================
+Separation time for this pass: 0.4678 seconds
+
+CUT 6 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [6, 8, 14]
+Lambda: 8.00000000
+Violation before adding: 0.88888889
+Total cuts added: 6
+LP objective after cut 6: 89731.345873
+LP solve time after cut 6: 0.0828 seconds
+IP objective after cut 6: 88378.870000
+Gap after cut 6 (%): 1.5303
+IP solve time after cut 6 (excluded from with-cuts total): 0.6113 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 7
+---------------------------------------------------------------------------
+Current LP objective: 89731.345873
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [6, 7, 8]
+Lambda: 5.00000000
+Inequality: x(7,6) + x(7,7) + x(7,8) + (0.00000000)*(1-y(7,6)) + (1.00000000)*(1-y(7,7)) + (-1.00000000)*(1-y(7,8)) <= a(7)
+LHS at current LP solution: 10.83333333
+RHS: 10.00000000
+Violation: 0.83333333
+===========================================================================
+Separation time for this pass: 0.5249 seconds
+
+CUT 7 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [6, 7, 8]
+Lambda: 5.00000000
+Violation before adding: 0.83333333
+Total cuts added: 7
+LP objective after cut 7: 89728.798668
+LP solve time after cut 7: 0.0934 seconds
+IP objective after cut 7: 88378.870000
+Gap after cut 7 (%): 1.5274
+IP solve time after cut 7 (excluded from with-cuts total): 0.5637 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 8
+---------------------------------------------------------------------------
+Current LP objective: 89728.798668
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [1, 6]
+Lambda: 2.00000000
+Inequality: x(7,1) + x(7,6) + (5.00000000)*(1-y(7,1)) + (3.00000000)*(1-y(7,6)) <= a(7)
+LHS at current LP solution: 10.11111111
+RHS: 10.00000000
+Violation: 0.11111111
+===========================================================================
+Separation time for this pass: 0.5287 seconds
+
+CUT 8 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [1, 6]
+Lambda: 2.00000000
+Violation before adding: 0.11111111
+Total cuts added: 8
+LP objective after cut 8: 89728.190159
+LP solve time after cut 8: 0.0851 seconds
+IP objective after cut 8: 88378.870000
+Gap after cut 8 (%): 1.5267
+IP solve time after cut 8 (excluded from with-cuts total): 1.0432 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 9
+---------------------------------------------------------------------------
+Current LP objective: 89728.190159
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 2
+Cover C1: [5, 12]
+Lambda: 3.00000000
+Inequality: x(2,5) + x(2,12) + (5.00000000)*(1-y(2,5)) + (2.00000000)*(1-y(2,12)) <= a(2)
+LHS at current LP solution: 10.22500000
+RHS: 10.00000000
+Violation: 0.22500000
+===========================================================================
+Separation time for this pass: 0.2086 seconds
+
+CUT 9 ADDED
+Type: SUPPLY
+Node: 2
+Cover: [5, 12]
+Lambda: 3.00000000
+Violation before adding: 0.22500000
+Total cuts added: 9
+LP objective after cut 9: 89726.690159
+LP solve time after cut 9: 0.0865 seconds
+IP objective after cut 9: 88378.870000
+Gap after cut 9 (%): 1.5250
+IP solve time after cut 9 (excluded from with-cuts total): 0.5295 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 10
+---------------------------------------------------------------------------
+Current LP objective: 89726.690159
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 2
+Cover C1: [5, 9]
+Lambda: 3.00000000
+Inequality: x(2,5) + x(2,9) + (5.00000000)*(1-y(2,5)) + (2.00000000)*(1-y(2,9)) <= a(2)
+LHS at current LP solution: 10.45000000
+RHS: 10.00000000
+Violation: 0.45000000
+===========================================================================
+Separation time for this pass: 0.1854 seconds
+
+CUT 10 ADDED
+Type: SUPPLY
+Node: 2
+Cover: [5, 9]
+Lambda: 3.00000000
+Violation before adding: 0.45000000
+Total cuts added: 10
+LP objective after cut 10: 89726.448825
+LP solve time after cut 10: 0.0803 seconds
+IP objective after cut 10: 88378.870000
+Gap after cut 10 (%): 1.5248
+IP solve time after cut 10 (excluded from with-cuts total): 0.9833 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 11
+---------------------------------------------------------------------------
+Current LP objective: 89726.448825
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [4, 6, 8]
+Lambda: 7.00000000
+Inequality: x(7,4) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,4)) + (-2.00000000)*(1-y(7,6)) + (-3.00000000)*(1-y(7,8)) <= a(7)
+LHS at current LP solution: 10.87500000
+RHS: 10.00000000
+Violation: 0.87500000
+===========================================================================
+Separation time for this pass: 0.5307 seconds
+
+CUT 11 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [4, 6, 8]
+Lambda: 7.00000000
+Violation before adding: 0.87500000
+Total cuts added: 11
+LP objective after cut 11: 89724.802384
+LP solve time after cut 11: 0.0770 seconds
+IP objective after cut 11: 88378.870000
+Gap after cut 11 (%): 1.5229
+IP solve time after cut 11 (excluded from with-cuts total): 0.5597 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 12
+---------------------------------------------------------------------------
+Current LP objective: 89724.802384
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [4, 6]
+Lambda: 3.00000000
+Inequality: x(7,4) + x(7,6) + (5.00000000)*(1-y(7,4)) + (2.00000000)*(1-y(7,6)) <= a(7)
+LHS at current LP solution: 10.15789474
+RHS: 10.00000000
+Violation: 0.15789474
+===========================================================================
+Separation time for this pass: 0.4690 seconds
+
+CUT 12 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [4, 6]
+Lambda: 3.00000000
+Violation before adding: 0.15789474
+Total cuts added: 12
+LP objective after cut 12: 89723.607937
+LP solve time after cut 12: 0.0749 seconds
+IP objective after cut 12: 88378.870000
+Gap after cut 12 (%): 1.5216
+IP solve time after cut 12 (excluded from with-cuts total): 1.0579 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 13
+---------------------------------------------------------------------------
+Current LP objective: 89723.607937
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [6, 8, 13]
+Lambda: 4.00000000
+Inequality: x(7,6) + x(7,8) + x(7,13) + (1.00000000)*(1-y(7,6)) + (0.00000000)*(1-y(7,8)) + (1.00000000)*(1-y(7,13)) <= a(7)
+LHS at current LP solution: 10.80000000
+RHS: 10.00000000
+Violation: 0.80000000
+===========================================================================
+Separation time for this pass: 0.4677 seconds
+
+CUT 13 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [6, 8, 13]
+Lambda: 4.00000000
+Violation before adding: 0.80000000
+Total cuts added: 13
+LP objective after cut 13: 89722.807788
+LP solve time after cut 13: 0.0943 seconds
+IP objective after cut 13: 88378.870000
+Gap after cut 13 (%): 1.5207
+IP solve time after cut 13 (excluded from with-cuts total): 0.5377 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 14
+---------------------------------------------------------------------------
+Current LP objective: 89722.807788
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [6, 14]
+Lambda: 4.00000000
+Inequality: x(7,6) + x(7,14) + (1.00000000)*(1-y(7,6)) + (5.00000000)*(1-y(7,14)) <= a(7)
+LHS at current LP solution: 10.25000000
+RHS: 10.00000000
+Violation: 0.25000000
+===========================================================================
+Separation time for this pass: 0.4659 seconds
+
+CUT 14 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [6, 14]
+Lambda: 4.00000000
+Violation before adding: 0.25000000
+Total cuts added: 14
+LP objective after cut 14: 89719.894444
+LP solve time after cut 14: 0.0804 seconds
+IP objective after cut 14: 88378.870000
+Gap after cut 14 (%): 1.5174
+IP solve time after cut 14 (excluded from with-cuts total): 1.1582 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 15
+---------------------------------------------------------------------------
+Current LP objective: 89719.894444
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [0, 6, 8]
+Lambda: 6.00000000
+Inequality: x(7,0) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,0)) + (-1.00000000)*(1-y(7,6)) + (-2.00000000)*(1-y(7,8)) <= a(7)
+LHS at current LP solution: 10.85714286
+RHS: 10.00000000
+Violation: 0.85714286
+===========================================================================
+Separation time for this pass: 0.4542 seconds
+
+CUT 15 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [0, 6, 8]
+Lambda: 6.00000000
+Violation before adding: 0.85714286
+Total cuts added: 15
+LP objective after cut 15: 89719.022947
+LP solve time after cut 15: 0.0836 seconds
+IP objective after cut 15: 88378.870000
+Gap after cut 15 (%): 1.5164
+IP solve time after cut 15 (excluded from with-cuts total): 0.8198 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 16
+---------------------------------------------------------------------------
+Current LP objective: 89719.022947
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 7
+Cover C1: [1, 8]
+Lambda: 1.00000000
+Inequality: x(7,1) + x(7,8) + (6.00000000)*(1-y(7,1)) + (3.00000000)*(1-y(7,8)) <= a(7)
+LHS at current LP solution: 10.02702703
+RHS: 10.00000000
+Violation: 0.02702703
+===========================================================================
+Separation time for this pass: 0.5002 seconds
+
+CUT 16 ADDED
+Type: SUPPLY
+Node: 7
+Cover: [1, 8]
+Lambda: 1.00000000
+Violation before adding: 0.02702703
+Total cuts added: 16
+LP objective after cut 16: 89718.249764
+LP solve time after cut 16: 0.0868 seconds
+IP objective after cut 16: 88378.870000
+Gap after cut 16 (%): 1.5155
+IP solve time after cut 16 (excluded from with-cuts total): 0.5397 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 17
+---------------------------------------------------------------------------
+Current LP objective: 89718.249764
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 8
+Cover C1: [3, 9]
+Lambda: 2.00000000
+Inequality: x(8,3) + x(8,9) + (1.00000000)*(1-y(8,3)) + (3.00000000)*(1-y(8,9)) <= a(8)
+LHS at current LP solution: 6.85873016
+RHS: 6.00000000
+Violation: 0.85873016
+===========================================================================
+Separation time for this pass: 0.5280 seconds
+
+CUT 17 ADDED
+Type: SUPPLY
+Node: 8
+Cover: [3, 9]
+Lambda: 2.00000000
+Violation before adding: 0.85873016
+Total cuts added: 17
+LP objective after cut 17: 89704.551509
+LP solve time after cut 17: 0.0632 seconds
+IP objective after cut 17: 88378.870000
+Gap after cut 17 (%): 1.5000
+IP solve time after cut 17 (excluded from with-cuts total): 0.5797 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 18
+---------------------------------------------------------------------------
+Current LP objective: 89704.551509
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 8
+Cover C1: [3, 13]
+Lambda: 2.00000000
+Inequality: x(8,3) + x(8,13) + (1.00000000)*(1-y(8,3)) + (3.00000000)*(1-y(8,13)) <= a(8)
+LHS at current LP solution: 6.12575419
+RHS: 6.00000000
+Violation: 0.12575419
+===========================================================================
+Separation time for this pass: 0.5711 seconds
+
+CUT 18 ADDED
+Type: SUPPLY
+Node: 8
+Cover: [3, 13]
+Lambda: 2.00000000
+Violation before adding: 0.12575419
+Total cuts added: 18
+LP objective after cut 18: 89703.919307
+LP solve time after cut 18: 0.0841 seconds
+IP objective after cut 18: 88378.870000
+Gap after cut 18 (%): 1.4993
+IP solve time after cut 18 (excluded from with-cuts total): 0.6167 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 19
+---------------------------------------------------------------------------
+Current LP objective: 89703.919307
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 11
+Cover C1: [0, 2]
+Lambda: 3.00000000
+Inequality: x(11,0) + x(11,2) + (4.00000000)*(1-y(11,0)) + (1.00000000)*(1-y(11,2)) <= a(11)
+LHS at current LP solution: 9.71428571
+RHS: 8.00000000
+Violation: 1.71428571
+===========================================================================
+Separation time for this pass: 0.7253 seconds
+
+CUT 19 ADDED
+Type: SUPPLY
+Node: 11
+Cover: [0, 2]
+Lambda: 3.00000000
+Violation before adding: 1.71428571
+Total cuts added: 19
+LP objective after cut 19: 89652.393966
+LP solve time after cut 19: 0.0739 seconds
+IP objective after cut 19: 88378.870000
+Gap after cut 19 (%): 1.4410
+IP solve time after cut 19 (excluded from with-cuts total): 0.5934 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 20
+---------------------------------------------------------------------------
+Current LP objective: 89652.393966
+
+===========================================================================
+SUPPLY FLOW COVER INEQUALITY
+Supply node index: 11
+Cover C1: [2, 14]
+Lambda: 4.00000000
+Inequality: x(11,2) + x(11,14) + (0.00000000)*(1-y(11,2)) + (4.00000000)*(1-y(11,14)) <= a(11)
+LHS at current LP solution: 10.00000000
+RHS: 8.00000000
+Violation: 2.00000000
+===========================================================================
+Separation time for this pass: 0.7905 seconds
+
+CUT 20 ADDED
+Type: SUPPLY
+Node: 11
+Cover: [2, 14]
+Lambda: 4.00000000
+Violation before adding: 2.00000000
+Total cuts added: 20
+LP objective after cut 20: 89629.800936
+LP solve time after cut 20: 0.0732 seconds
+IP objective after cut 20: 88378.870000
+Gap after cut 20 (%): 1.4154
+IP solve time after cut 20 (excluded from with-cuts total): 0.5689 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 21
+---------------------------------------------------------------------------
+Current LP objective: 89629.800936
+
+===========================================================================
+DEMAND FLOW COVER INEQUALITY
+Demand node index: 4
+Cover C1: [2, 14]
+Lambda: 1.00000000
+Inequality: x(2,4) + x(14,4) + (7.00000000)*(1-y(2,4)) + (0.00000000)*(1-y(14,4)) <= b(4)
+LHS at current LP solution: 8.29678771
+RHS: 8.00000000
+Violation: 0.29678771
+===========================================================================
+Separation time for this pass: 1.2318 seconds
+
+CUT 21 ADDED
+Type: DEMAND
+Node: 4
+Cover: [2, 14]
+Lambda: 1.00000000
+Violation before adding: 0.29678771
+Total cuts added: 21
+LP objective after cut 21: 89615.328009
+LP solve time after cut 21: 0.0855 seconds
+IP objective after cut 21: 88378.870000
+Gap after cut 21 (%): 1.3990
+IP solve time after cut 21 (excluded from with-cuts total): 0.6474 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 22
+---------------------------------------------------------------------------
+Current LP objective: 89615.328009
+
+===========================================================================
+DEMAND FLOW COVER INEQUALITY
+Demand node index: 5
+Cover C1: [2, 9]
+Lambda: 1.00000000
+Inequality: x(2,5) + x(9,5) + (7.00000000)*(1-y(2,5)) + (0.00000000)*(1-y(9,5)) <= b(5)
+LHS at current LP solution: 8.71326754
+RHS: 8.00000000
+Violation: 0.71326754
+===========================================================================
+Separation time for this pass: 1.3615 seconds
+
+CUT 22 ADDED
+Type: DEMAND
+Node: 5
+Cover: [2, 9]
+Lambda: 1.00000000
+Violation before adding: 0.71326754
+Total cuts added: 22
+LP objective after cut 22: 89613.757158
+LP solve time after cut 22: 0.0773 seconds
+IP objective after cut 22: 88378.870000
+Gap after cut 22 (%): 1.3973
+IP solve time after cut 22 (excluded from with-cuts total): 0.5666 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 23
+---------------------------------------------------------------------------
+Current LP objective: 89613.757158
+
+===========================================================================
+DEMAND FLOW COVER INEQUALITY
+Demand node index: 4
+Cover C1: [2, 10]
+Lambda: 5.00000000
+Inequality: x(2,4) + x(10,4) + (3.00000000)*(1-y(2,4)) + (0.00000000)*(1-y(10,4)) <= b(4)
+LHS at current LP solution: 9.20924092
+RHS: 8.00000000
+Violation: 1.20924092
+===========================================================================
+Separation time for this pass: 1.2470 seconds
+
+CUT 23 ADDED
+Type: DEMAND
+Node: 4
+Cover: [2, 10]
+Lambda: 5.00000000
+Violation before adding: 1.20924092
+Total cuts added: 23
+LP objective after cut 23: 89609.643487
+LP solve time after cut 23: 0.0801 seconds
+IP objective after cut 23: 88378.870000
+Gap after cut 23 (%): 1.3926
+IP solve time after cut 23 (excluded from with-cuts total): 0.4312 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 24
+---------------------------------------------------------------------------
+Current LP objective: 89609.643487
+
+===========================================================================
+DEMAND FLOW COVER INEQUALITY
+Demand node index: 10
+Cover C1: [1, 3]
+Lambda: 1.00000000
+Inequality: x(1,10) + x(3,10) + (0.00000000)*(1-y(1,10)) + (2.00000000)*(1-y(3,10)) <= b(10)
+LHS at current LP solution: 3.66666667
+RHS: 3.00000000
+Violation: 0.66666667
+===========================================================================
+Separation time for this pass: 1.6280 seconds
+
+CUT 24 ADDED
+Type: DEMAND
+Node: 10
+Cover: [1, 3]
+Lambda: 1.00000000
+Violation before adding: 0.66666667
+Total cuts added: 24
+LP objective after cut 24: 89542.155011
+LP solve time after cut 24: 0.0865 seconds
+IP objective after cut 24: 88378.870000
+Gap after cut 24 (%): 1.3162
+IP solve time after cut 24 (excluded from with-cuts total): 0.5502 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 25
+---------------------------------------------------------------------------
+Current LP objective: 89542.155011
+
+===========================================================================
+DEMAND FLOW COVER INEQUALITY
+Demand node index: 11
+Cover C1: [0, 6]
+Lambda: 4.00000000
+Inequality: x(0,11) + x(6,11) + (1.00000000)*(1-y(0,11)) + (0.00000000)*(1-y(6,11)) <= b(11)
+LHS at current LP solution: 5.80000000
+RHS: 5.00000000
+Violation: 0.80000000
+===========================================================================
+Separation time for this pass: 1.6732 seconds
+
+CUT 25 ADDED
+Type: DEMAND
+Node: 11
+Cover: [0, 6]
+Lambda: 4.00000000
+Violation before adding: 0.80000000
+Total cuts added: 25
+LP objective after cut 25: 89520.569413
+LP solve time after cut 25: 0.0686 seconds
+IP objective after cut 25: 88378.870000
+Gap after cut 25 (%): 1.2918
+IP solve time after cut 25 (excluded from with-cuts total): 0.5042 seconds
+
+---------------------------------------------------------------------------
+SEPARATION PASS 26
+---------------------------------------------------------------------------
+Current LP objective: 89520.569413
+Separation time for this pass: 1.9123 seconds
+No violated supply or demand FCI found.
+Separation procedure stopped.
+
+===========================================================================
+FINAL OPTIMIZATION RESULTS
+===========================================================================
+Total cuts added: 25
+
+--- BEFORE CUTS: BASELINE RUN 1 ---
+LP objective: 89839.968095
+IP objective: 88378.870000
+Gap before cuts (%): 1.6532
+
+--- AFTER ALL CUTS ---
+LP objective: 89520.569413
+IP objective: 88378.870000
+Gap after cuts (%): 1.2918
+Gap reduction (percentage points): 0.3614
+
+===========================================================================
+WITHOUT-CUTS TIMING: LP + IP
+===========================================================================
+Run 1: LP = 0.0815 s, IP = 0.4979 s, LP + IP = 0.5795 s
+Run 2: LP = 0.0841 s, IP = 0.5092 s, LP + IP = 0.5933 s
+Run 3: LP = 0.0775 s, IP = 0.5011 s, LP + IP = 0.5786 s
+
+===========================================================================
+WITH-CUTS TIMING: SEPARATION + LP
+===========================================================================
+Total separation time: 18.0216 seconds
+Total LP solving time with cuts: 2.1176 seconds
+TOTAL TIME WITH CUTS (Separation + LP): 20.1393 seconds
+IP solving time with cuts, reported separately: 16.3911 seconds
+Final IP solve time, excluded from total: 0.4936 seconds
+Total wall-clock runtime: 40.0014 seconds
+
+===========================================================================
+ALL ADDED FLOW COVER INEQUALITIES
+===========================================================================
+
+Cut number: 1
+Type: SUPPLY
+Node index: 0
+Cover: [11, 12]
+Lambda: 3.00000000
+Inequality: x(0,11) + x(0,12) + (2.00000000)*(1-y(0,11)) + (2.00000000)*(1-y(0,12)) <= a(0)
+LHS before adding: 7.60000000
+RHS: 7.00000000
+Violation: 0.60000000
+
+Cut number: 2
+Type: SUPPLY
+Node index: 2
+Cover: [4, 5]
+Lambda: 6.00000000
+Inequality: x(2,4) + x(2,5) + (2.00000000)*(1-y(2,4)) + (2.00000000)*(1-y(2,5)) <= a(2)
+LHS before adding: 11.50000000
+RHS: 10.00000000
+Violation: 1.50000000
+
+Cut number: 3
+Type: SUPPLY
+Node index: 5
+Cover: [3, 14]
+Lambda: 3.00000000
+Inequality: x(5,3) + x(5,14) + (0.00000000)*(1-y(5,3)) + (6.00000000)*(1-y(5,14)) <= a(5)
+LHS before adding: 11.00000000
+RHS: 9.00000000
+Violation: 2.00000000
+
+Cut number: 4
+Type: SUPPLY
+Node index: 4
+Cover: [0, 13]
+Lambda: 5.00000000
+Inequality: x(4,0) + x(4,13) + (2.00000000)*(1-y(4,0)) + (0.00000000)*(1-y(4,13)) <= a(4)
+LHS before adding: 8.42857143
+RHS: 7.00000000
+Violation: 1.42857143
+
+Cut number: 5
+Type: SUPPLY
+Node index: 7
+Cover: [1, 6, 8]
+Lambda: 6.00000000
+Inequality: x(7,1) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,1)) + (-1.00000000)*(1-y(7,6)) + (-2.00000000)*(1-y(7,8)) <= a(7)
+LHS before adding: 10.85714286
+RHS: 10.00000000
+Violation: 0.85714286
+
+Cut number: 6
+Type: SUPPLY
+Node index: 7
+Cover: [6, 8, 14]
+Lambda: 8.00000000
+Inequality: x(7,6) + x(7,8) + x(7,14) + (-3.00000000)*(1-y(7,6)) + (-4.00000000)*(1-y(7,8)) + (1.00000000)*(1-y(7,14)) <= a(7)
+LHS before adding: 10.88888889
+RHS: 10.00000000
+Violation: 0.88888889
+
+Cut number: 7
+Type: SUPPLY
+Node index: 7
+Cover: [6, 7, 8]
+Lambda: 5.00000000
+Inequality: x(7,6) + x(7,7) + x(7,8) + (0.00000000)*(1-y(7,6)) + (1.00000000)*(1-y(7,7)) + (-1.00000000)*(1-y(7,8)) <= a(7)
+LHS before adding: 10.83333333
+RHS: 10.00000000
+Violation: 0.83333333
+
+Cut number: 8
+Type: SUPPLY
+Node index: 7
+Cover: [1, 6]
+Lambda: 2.00000000
+Inequality: x(7,1) + x(7,6) + (5.00000000)*(1-y(7,1)) + (3.00000000)*(1-y(7,6)) <= a(7)
+LHS before adding: 10.11111111
+RHS: 10.00000000
+Violation: 0.11111111
+
+Cut number: 9
+Type: SUPPLY
+Node index: 2
+Cover: [5, 12]
+Lambda: 3.00000000
+Inequality: x(2,5) + x(2,12) + (5.00000000)*(1-y(2,5)) + (2.00000000)*(1-y(2,12)) <= a(2)
+LHS before adding: 10.22500000
+RHS: 10.00000000
+Violation: 0.22500000
+
+Cut number: 10
+Type: SUPPLY
+Node index: 2
+Cover: [5, 9]
+Lambda: 3.00000000
+Inequality: x(2,5) + x(2,9) + (5.00000000)*(1-y(2,5)) + (2.00000000)*(1-y(2,9)) <= a(2)
+LHS before adding: 10.45000000
+RHS: 10.00000000
+Violation: 0.45000000
+
+Cut number: 11
+Type: SUPPLY
+Node index: 7
+Cover: [4, 6, 8]
+Lambda: 7.00000000
+Inequality: x(7,4) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,4)) + (-2.00000000)*(1-y(7,6)) + (-3.00000000)*(1-y(7,8)) <= a(7)
+LHS before adding: 10.87500000
+RHS: 10.00000000
+Violation: 0.87500000
+
+Cut number: 12
+Type: SUPPLY
+Node index: 7
+Cover: [4, 6]
+Lambda: 3.00000000
+Inequality: x(7,4) + x(7,6) + (5.00000000)*(1-y(7,4)) + (2.00000000)*(1-y(7,6)) <= a(7)
+LHS before adding: 10.15789474
+RHS: 10.00000000
+Violation: 0.15789474
+
+Cut number: 13
+Type: SUPPLY
+Node index: 7
+Cover: [6, 8, 13]
+Lambda: 4.00000000
+Inequality: x(7,6) + x(7,8) + x(7,13) + (1.00000000)*(1-y(7,6)) + (0.00000000)*(1-y(7,8)) + (1.00000000)*(1-y(7,13)) <= a(7)
+LHS before adding: 10.80000000
+RHS: 10.00000000
+Violation: 0.80000000
+
+Cut number: 14
+Type: SUPPLY
+Node index: 7
+Cover: [6, 14]
+Lambda: 4.00000000
+Inequality: x(7,6) + x(7,14) + (1.00000000)*(1-y(7,6)) + (5.00000000)*(1-y(7,14)) <= a(7)
+LHS before adding: 10.25000000
+RHS: 10.00000000
+Violation: 0.25000000
+
+Cut number: 15
+Type: SUPPLY
+Node index: 7
+Cover: [0, 6, 8]
+Lambda: 6.00000000
+Inequality: x(7,0) + x(7,6) + x(7,8) + (1.00000000)*(1-y(7,0)) + (-1.00000000)*(1-y(7,6)) + (-2.00000000)*(1-y(7,8)) <= a(7)
+LHS before adding: 10.85714286
+RHS: 10.00000000
+Violation: 0.85714286
+
+Cut number: 16
+Type: SUPPLY
+Node index: 7
+Cover: [1, 8]
+Lambda: 1.00000000
+Inequality: x(7,1) + x(7,8) + (6.00000000)*(1-y(7,1)) + (3.00000000)*(1-y(7,8)) <= a(7)
+LHS before adding: 10.02702703
+RHS: 10.00000000
+Violation: 0.02702703
+
+Cut number: 17
+Type: SUPPLY
+Node index: 8
+Cover: [3, 9]
+Lambda: 2.00000000
+Inequality: x(8,3) + x(8,9) + (1.00000000)*(1-y(8,3)) + (3.00000000)*(1-y(8,9)) <= a(8)
+LHS before adding: 6.85873016
+RHS: 6.00000000
+Violation: 0.85873016
+
+Cut number: 18
+Type: SUPPLY
+Node index: 8
+Cover: [3, 13]
+Lambda: 2.00000000
+Inequality: x(8,3) + x(8,13) + (1.00000000)*(1-y(8,3)) + (3.00000000)*(1-y(8,13)) <= a(8)
+LHS before adding: 6.12575419
+RHS: 6.00000000
+Violation: 0.12575419
+
+Cut number: 19
+Type: SUPPLY
+Node index: 11
+Cover: [0, 2]
+Lambda: 3.00000000
+Inequality: x(11,0) + x(11,2) + (4.00000000)*(1-y(11,0)) + (1.00000000)*(1-y(11,2)) <= a(11)
+LHS before adding: 9.71428571
+RHS: 8.00000000
+Violation: 1.71428571
+
+Cut number: 20
+Type: SUPPLY
+Node index: 11
+Cover: [2, 14]
+Lambda: 4.00000000
+Inequality: x(11,2) + x(11,14) + (0.00000000)*(1-y(11,2)) + (4.00000000)*(1-y(11,14)) <= a(11)
+LHS before adding: 10.00000000
+RHS: 8.00000000
+Violation: 2.00000000
+
+Cut number: 21
+Type: DEMAND
+Node index: 4
+Cover: [2, 14]
+Lambda: 1.00000000
+Inequality: x(2,4) + x(14,4) + (7.00000000)*(1-y(2,4)) + (0.00000000)*(1-y(14,4)) <= b(4)
+LHS before adding: 8.29678771
+RHS: 8.00000000
+Violation: 0.29678771
+
+Cut number: 22
+Type: DEMAND
+Node index: 5
+Cover: [2, 9]
+Lambda: 1.00000000
+Inequality: x(2,5) + x(9,5) + (7.00000000)*(1-y(2,5)) + (0.00000000)*(1-y(9,5)) <= b(5)
+LHS before adding: 8.71326754
+RHS: 8.00000000
+Violation: 0.71326754
+
+Cut number: 23
+Type: DEMAND
+Node index: 4
+Cover: [2, 10]
+Lambda: 5.00000000
+Inequality: x(2,4) + x(10,4) + (3.00000000)*(1-y(2,4)) + (0.00000000)*(1-y(10,4)) <= b(4)
+LHS before adding: 9.20924092
+RHS: 8.00000000
+Violation: 1.20924092
+
+Cut number: 24
+Type: DEMAND
+Node index: 10
+Cover: [1, 3]
+Lambda: 1.00000000
+Inequality: x(1,10) + x(3,10) + (0.00000000)*(1-y(1,10)) + (2.00000000)*(1-y(3,10)) <= b(10)
+LHS before adding: 3.66666667
+RHS: 3.00000000
+Violation: 0.66666667
+
+Cut number: 25
+Type: DEMAND
+Node index: 11
+Cover: [0, 6]
+Lambda: 4.00000000
+Inequality: x(0,11) + x(6,11) + (1.00000000)*(1-y(0,11)) + (0.00000000)*(1-y(6,11)) <= b(11)
+LHS before adding: 5.80000000
+RHS: 5.00000000
+Violation: 0.80000000
+
+Excel results saved to: fctp_gap_15_15_one_cut.xlsx

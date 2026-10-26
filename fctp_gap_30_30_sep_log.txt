@@ -1,0 +1,281 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-10-24 18:04:31
+
+Iteration 0 (Before cuts)
+LP = 168837.7779, IP = 166714.1800, Gap% = 1.27
+
+--- Iteration 1 ---
+
+[SUPPLY FLOW COVER] Node i = 8
+C1 = [21, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(8,21) + x(8,27) + (2.00)(1-y(8,21)) + (4.00)(1-y(8,27)) <= a(8)
+
+[SUPPLY FLOW COVER] Node i = 9
+C1 = [5, 12]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(9,5) + x(9,12) + (1.00)(1-y(9,5)) + (1.00)(1-y(9,12)) <= a(9)
+
+[SUPPLY FLOW COVER] Node i = 12
+C1 = [11, 12]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(12,11) + x(12,12) + (0.00)(1-y(12,11)) + (1.00)(1-y(12,12)) <= a(12)
+
+[SUPPLY FLOW COVER] Node i = 22
+C1 = [15, 29]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(22,15) + x(22,29) + (1.00)(1-y(22,15)) + (2.00)(1-y(22,29)) <= a(22)
+
+[SUPPLY FLOW COVER] Node i = 23
+C1 = [4, 13]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(23,4) + x(23,13) + (2.00)(1-y(23,4)) + (0.00)(1-y(23,13)) <= a(23)
+
+[SUPPLY FLOW COVER] Node i = 24
+C1 = [3, 23]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(24,3) + x(24,23) + (3.00)(1-y(24,3)) + (0.00)(1-y(24,23)) <= a(24)
+
+[SUPPLY FLOW COVER] Node i = 27
+C1 = [8, 28]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(27,8) + x(27,28) + (1.00)(1-y(27,8)) + (4.00)(1-y(27,28)) <= a(27)
+
+[SUPPLY FLOW COVER] Node i = 29
+C1 = [14, 20]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(29,14) + x(29,20) + (1.00)(1-y(29,14)) + (1.00)(1-y(29,20)) <= a(29)
+
+[DEMAND FLOW COVER] Node j = 1
+C1 = [10, 25]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(10,1) + x(25,1) + (2.00)(1-y(10,1)) + (0.00)(1-y(25,1)) <= b(1)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [6, 24]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(6,3) + x(24,3) + (1.00)(1-y(6,3)) + (2.00)(1-y(24,3)) <= b(3)
+
+[DEMAND FLOW COVER] Node j = 7
+C1 = [2, 19]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(2,7) + x(19,7) + (3.00)(1-y(2,7)) + (2.00)(1-y(19,7)) <= b(7)
+
+[DEMAND FLOW COVER] Node j = 9
+C1 = [20, 26]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(20,9) + x(26,9) + (3.00)(1-y(20,9)) + (1.00)(1-y(26,9)) <= b(9)
+
+[DEMAND FLOW COVER] Node j = 14
+C1 = [3, 29]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(3,14) + x(29,14) + (0.00)(1-y(3,14)) + (1.00)(1-y(29,14)) <= b(14)
+
+[DEMAND FLOW COVER] Node j = 19
+C1 = [0, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,19) + x(2,19) + (6.00)(1-y(0,19)) + (1.00)(1-y(2,19)) <= b(19)
+
+[DEMAND FLOW COVER] Node j = 26
+C1 = [5, 14]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(5,26) + x(14,26) + (1.00)(1-y(5,26)) + (2.00)(1-y(14,26)) <= b(26)
+
+[DEMAND FLOW COVER] Node j = 27
+C1 = [4, 8]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(4,27) + x(8,27) + (0.00)(1-y(4,27)) + (4.00)(1-y(8,27)) <= b(27)
+
+[DEMAND FLOW COVER] Node j = 28
+C1 = [17, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(17,28) + x(27,28) + (0.00)(1-y(17,28)) + (4.00)(1-y(27,28)) <= b(28)
+LP = 168837.7779, IP = 166714.1800, Gap% = 1.27
+
+--- Iteration 2 ---
+
+[SUPPLY FLOW COVER] Node i = 8
+C1 = [21, 26]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(8,21) + x(8,26) + (0.00)(1-y(8,21)) + (4.00)(1-y(8,26)) <= a(8)
+
+[SUPPLY FLOW COVER] Node i = 12
+C1 = [3, 11]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(12,3) + x(12,11) + (1.00)(1-y(12,3)) + (0.00)(1-y(12,11)) <= a(12)
+
+[SUPPLY FLOW COVER] Node i = 22
+C1 = [7, 15]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(22,7) + x(22,15) + (2.00)(1-y(22,7)) + (0.00)(1-y(22,15)) <= a(22)
+
+[SUPPLY FLOW COVER] Node i = 23
+C1 = [3, 13]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(23,3) + x(23,13) + (2.00)(1-y(23,3)) + (0.00)(1-y(23,13)) <= a(23)
+
+[SUPPLY FLOW COVER] Node i = 24
+C1 = [4, 23]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(24,4) + x(24,23) + (3.00)(1-y(24,4)) + (0.00)(1-y(24,23)) <= a(24)
+
+[SUPPLY FLOW COVER] Node i = 27
+C1 = [8, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(27,8) + x(27,27) + (2.00)(1-y(27,8)) + (4.00)(1-y(27,27)) <= a(27)
+
+[SUPPLY FLOW COVER] Node i = 29
+C1 = [20, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(29,20) + x(29,27) + (0.00)(1-y(29,20)) + (1.00)(1-y(29,27)) <= a(29)
+
+[DEMAND FLOW COVER] Node j = 9
+C1 = [8, 20]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(8,9) + x(20,9) + (1.00)(1-y(8,9)) + (0.00)(1-y(20,9)) <= b(9)
+
+[DEMAND FLOW COVER] Node j = 12
+C1 = [10, 26]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(10,12) + x(26,12) + (2.00)(1-y(10,12)) + (0.00)(1-y(26,12)) <= b(12)
+
+[DEMAND FLOW COVER] Node j = 14
+C1 = [3, 19]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(3,14) + x(19,14) + (0.00)(1-y(3,14)) + (1.00)(1-y(19,14)) <= b(14)
+
+[DEMAND FLOW COVER] Node j = 19
+C1 = [0, 15]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,19) + x(15,19) + (1.00)(1-y(0,19)) + (1.00)(1-y(15,19)) <= b(19)
+
+[DEMAND FLOW COVER] Node j = 26
+C1 = [5, 8]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(5,26) + x(8,26) + (0.00)(1-y(5,26)) + (2.00)(1-y(8,26)) <= b(26)
+
+[DEMAND FLOW COVER] Node j = 27
+C1 = [4, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(4,27) + x(27,27) + (0.00)(1-y(4,27)) + (4.00)(1-y(27,27)) <= b(27)
+
+[DEMAND FLOW COVER] Node j = 28
+C1 = [11, 17]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(11,28) + x(17,28) + (4.00)(1-y(11,28)) + (0.00)(1-y(17,28)) <= b(28)
+LP = 168559.7794, IP = 166714.1800, Gap% = 1.11
+
+--- Iteration 3 ---
+
+[SUPPLY FLOW COVER] Node i = 12
+C1 = [11, 21]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(12,11) + x(12,21) + (0.00)(1-y(12,11)) + (1.00)(1-y(12,21)) <= a(12)
+
+[SUPPLY FLOW COVER] Node i = 23
+C1 = [7, 13]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(23,7) + x(23,13) + (2.00)(1-y(23,7)) + (0.00)(1-y(23,13)) <= a(23)
+
+[SUPPLY FLOW COVER] Node i = 24
+C1 = [23, 27]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(24,23) + x(24,27) + (1.00)(1-y(24,23)) + (3.00)(1-y(24,27)) <= a(24)
+
+[SUPPLY FLOW COVER] Node i = 27
+C1 = [0, 8]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(27,0) + x(27,8) + (4.00)(1-y(27,0)) + (2.00)(1-y(27,8)) <= a(27)
+
+[SUPPLY FLOW COVER] Node i = 29
+C1 = [9, 20]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(29,9) + x(29,20) + (1.00)(1-y(29,9)) + (0.00)(1-y(29,20)) <= a(29)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [2, 6]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(2,3) + x(6,3) + (2.00)(1-y(2,3)) + (6.00)(1-y(6,3)) <= b(3)
+
+[DEMAND FLOW COVER] Node j = 7
+C1 = [19, 23]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(19,7) + x(23,7) + (2.00)(1-y(19,7)) + (3.00)(1-y(23,7)) <= b(7)
+
+[DEMAND FLOW COVER] Node j = 9
+C1 = [20, 29]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(20,9) + x(29,9) + (5.00)(1-y(20,9)) + (1.00)(1-y(29,9)) <= b(9)
+
+[DEMAND FLOW COVER] Node j = 12
+C1 = [9, 26]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(9,12) + x(26,12) + (2.00)(1-y(9,12)) + (0.00)(1-y(26,12)) <= b(12)
+
+[DEMAND FLOW COVER] Node j = 14
+C1 = [3, 25]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(3,14) + x(25,14) + (0.00)(1-y(3,14)) + (1.00)(1-y(25,14)) <= b(14)
+
+[DEMAND FLOW COVER] Node j = 19
+C1 = [0, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,19) + x(4,19) + (6.00)(1-y(0,19)) + (1.00)(1-y(4,19)) <= b(19)
+
+[DEMAND FLOW COVER] Node j = 26
+C1 = [5, 15]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(5,26) + x(15,26) + (1.00)(1-y(5,26)) + (2.00)(1-y(15,26)) <= b(26)
+LP = 168463.6674, IP = 166714.1800, Gap% = 1.05
+
+--- Iteration 4 ---
+
+[SUPPLY FLOW COVER] Node i = 8
+C1 = [5, 21]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(8,5) + x(8,21) + (4.00)(1-y(8,5)) + (3.00)(1-y(8,21)) <= a(8)
+
+[DEMAND FLOW COVER] Node j = 1
+C1 = [2, 25]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(2,1) + x(25,1) + (2.00)(1-y(2,1)) + (2.00)(1-y(25,1)) <= b(1)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [6, 23]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(6,3) + x(23,3) + (6.00)(1-y(6,3)) + (2.00)(1-y(23,3)) <= b(3)
+
+[DEMAND FLOW COVER] Node j = 26
+C1 = [5, 26]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(5,26) + x(26,26) + (5.00)(1-y(5,26)) + (2.00)(1-y(26,26)) <= b(26)
+LP = 168389.7548, IP = 166714.1800, Gap% = 1.01
+
+--- Iteration 5 ---
+
+[DEMAND FLOW COVER] Node j = 26
+C1 = [0, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,26) + x(5,26) + (2.00)(1-y(0,26)) + (1.00)(1-y(5,26)) <= b(26)
+LP = 168371.4216, IP = 166714.1800, Gap% = 0.99
+
+--- Iteration 6 ---
+LP = 168367.9709, IP = 166714.1800, Gap% = 0.99
+
+✅ Results saved to: fctp_gap_30_30_sep.xlsx
+Total Flow Cover Inequalities added: 48
+Runtime Without Cuts (LP + IP): 11.866 seconds
+Separation Time: 28.028 seconds
+Runtime After Adding Cuts (LPs across iterations): 1.075 seconds
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 | 168837.78 | 166714.18 |   1.27
+   1 | 168837.78 | 166714.18 |   1.27
+   2 | 168559.78 | 166714.18 |   1.11
+   3 | 168463.67 | 166714.18 |   1.05
+   4 | 168389.75 | 166714.18 |   1.01
+   5 | 168371.42 | 166714.18 |   0.99
+   6 | 168367.97 | 166714.18 |   0.99

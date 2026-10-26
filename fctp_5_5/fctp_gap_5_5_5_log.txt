@@ -1,0 +1,46 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-05-19 16:43:35
+
+Iteration 0 (Before cuts)
+LP = 2904.2800, IP = 2486.5900, Gap% = 16.80
+
+--- Iteration 1 ---
+
+[SUPPLY FLOW COVER] Node i = 0
+C1 = [1, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(0,1) + x(0,4) + (3.00)(1-y(0,1)) + (1.00)(1-y(0,4)) <= a(0)
+
+[SUPPLY FLOW COVER] Node i = 3
+C1 = [2, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(3,2) + x(3,4) + (2.00)(1-y(3,2)) + (1.00)(1-y(3,4)) <= a(3)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [0, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,4) + x(2,4) + (2.00)(1-y(0,4)) + (0.00)(1-y(2,4)) <= b(4)
+LP = 2904.2800, IP = 2486.5900, Gap% = 16.80
+
+--- Iteration 2 ---
+
+[SUPPLY FLOW COVER] Node i = 0
+C1 = [1, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(0,1) + x(0,2) + (2.00)(1-y(0,1)) + (1.00)(1-y(0,2)) <= a(0)
+LP = 2842.0803, IP = 2486.5900, Gap% = 14.30
+
+--- Iteration 3 ---
+LP = 2829.8950, IP = 2486.5900, Gap% = 13.81
+
+✅ Results saved to: fctp_gap_5_5_5.xlsx
+Total Flow Cover Inequalities added: 4
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 |  2904.28 |  2486.59 |  16.80
+   1 |  2904.28 |  2486.59 |  16.80
+   2 |  2842.08 |  2486.59 |  14.30
+   3 |  2829.89 |  2486.59 |  13.81

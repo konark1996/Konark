@@ -1,0 +1,84 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-05-14 17:43:26
+
+Iteration 0 (Before cuts)
+LP = 3924.4167, IP = 3229.3100, Gap% = 21.52
+
+--- Iteration 1 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [2, 3]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,2) + x(1,3) + (4.00)(1-y(1,2)) + (3.00)(1-y(1,3)) <= a(1)
+
+[SUPPLY FLOW COVER] Node i = 3
+C1 = [0, 1]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(3,0) + x(3,1) + (2.00)(1-y(3,0)) + (1.00)(1-y(3,1)) <= a(3)
+
+[SUPPLY FLOW COVER] Node i = 4
+C1 = [0, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(4,0) + x(4,4) + (2.00)(1-y(4,0)) + (1.00)(1-y(4,4)) <= a(4)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [0, 1]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,3) + x(1,3) + (0.00)(1-y(0,3)) + (2.00)(1-y(1,3)) <= b(3)
+LP = 3924.4167, IP = 3229.3100, Gap% = 21.52
+
+--- Iteration 2 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [0, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,0) + x(1,2) + (3.00)(1-y(1,0)) + (5.00)(1-y(1,2)) <= a(1)
+
+[SUPPLY FLOW COVER] Node i = 3
+C1 = [1, 3]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(3,1) + x(3,3) + (0.00)(1-y(3,1)) + (2.00)(1-y(3,3)) <= a(3)
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [0, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,3) + x(4,3) + (0.00)(1-y(0,3)) + (2.00)(1-y(4,3)) <= b(3)
+LP = 3609.3180, IP = 3229.3100, Gap% = 11.77
+
+--- Iteration 3 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [2, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,2) + x(1,4) + (6.00)(1-y(1,2)) + (3.00)(1-y(1,4)) <= a(1)
+
+[SUPPLY FLOW COVER] Node i = 3
+C1 = [1, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(3,1) + x(3,2) + (0.00)(1-y(3,1)) + (2.00)(1-y(3,2)) <= a(3)
+LP = 3550.7667, IP = 3229.3100, Gap% = 9.95
+
+--- Iteration 4 ---
+
+[DEMAND FLOW COVER] Node j = 3
+C1 = [0, 2]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(0,3) + x(2,3) + (1.00)(1-y(0,3)) + (2.00)(1-y(2,3)) <= b(3)
+LP = 3524.5886, IP = 3229.3100, Gap% = 9.14
+
+--- Iteration 5 ---
+LP = 3524.3341, IP = 3229.3100, Gap% = 9.14
+
+✅ Results saved to: fctp_gap_5_6_1.xlsx
+Total Flow Cover Inequalities added: 10
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 |  3924.42 |  3229.31 |  21.52
+   1 |  3924.42 |  3229.31 |  21.52
+   2 |  3609.32 |  3229.31 |  11.77
+   3 |  3550.77 |  3229.31 |   9.95
+   4 |  3524.59 |  3229.31 |   9.14
+   5 |  3524.33 |  3229.31 |   9.14

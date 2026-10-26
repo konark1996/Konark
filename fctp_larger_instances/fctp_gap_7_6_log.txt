@@ -1,0 +1,72 @@
+
+📘 FCTP Cutting Plane with Flow Cover Inequalities
+Run timestamp: 2026-08-14 18:38:35
+
+========== WITHOUT FCI ==========
+
+Iteration 0 (Before cuts)
+LP = 1972.6633, IP = 1648.2000, Gap% = 19.69
+Runtime WITHOUT FCI = 0.1673 seconds
+
+========== WITH FCI / SEPARATION ==========
+
+--- Iteration 1 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [0, 2, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,0) + x(1,2) + x(1,5) + (-2.00)(1-y(1,0)) + (2.00)(1-y(1,2)) + (-2.00)(1-y(1,5)) <= a(1)
+
+[DEMAND FLOW COVER] Node j = 2
+C1 = [1, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(1,2) + x(5,2) + (2.00)(1-y(1,2)) + (0.00)(1-y(5,2)) <= b(2)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [4, 6]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(4,4) + x(6,4) + (1.00)(1-y(4,4)) + (3.00)(1-y(6,4)) <= b(4)
+LP = 1972.6633, IP = 1648.2000, Gap% = 19.69
+
+--- Iteration 2 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [0, 4, 5]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,0) + x(1,4) + x(1,5) + (-1.00)(1-y(1,0)) + (2.00)(1-y(1,4)) + (-1.00)(1-y(1,5)) <= a(1)
+
+[DEMAND FLOW COVER] Node j = 4
+C1 = [1, 6]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ b_j
+x(1,4) + x(6,4) + (1.00)(1-y(1,4)) + (0.00)(1-y(6,4)) <= b(4)
+LP = 1815.3900, IP = 1648.2000, Gap% = 10.14
+
+--- Iteration 3 ---
+
+[SUPPLY FLOW COVER] Node i = 1
+C1 = [0, 4]
+∑ x_ij + ∑ (M_ij − λ)(1 − y_ij) ≤ a_i
+x(1,0) + x(1,4) + (1.00)(1-y(1,0)) + (4.00)(1-y(1,4)) <= a(1)
+LP = 1777.0033, IP = 1648.2000, Gap% = 7.81
+
+--- Iteration 4 ---
+LP = 1737.9986, IP = 1648.2000, Gap% = 5.45
+
+==============================================
+FINAL RESULTS
+==============================================
+Gap Before FCI      = 19.69%
+Gap After FCI       = 5.45%
+Gap Reduction       = 14.24%
+Runtime WITHOUT FCI = 0.1673 seconds
+Runtime WITH FCI    = 4.7893 seconds
+Total Flow Cover Inequalities = 6
+
+📊 GAP EVOLUTION
+Iter | LP Obj | IP Obj | Gap %
+--------------------------------------
+   0 |  1972.66 |  1648.20 |  19.69
+   1 |  1972.66 |  1648.20 |  19.69
+   2 |  1815.39 |  1648.20 |  10.14
+   3 |  1777.00 |  1648.20 |   7.81
+   4 |  1738.00 |  1648.20 |   5.45
